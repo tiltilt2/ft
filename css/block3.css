@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
+.course {
+   .block2-2 {
+      background-color: #7b00ce;
+   }
+   .block3-3 {
+      background-color: #6100a1;
+   }
+   .block4-4:hover {
+      background-color: #49007a;
+   }
+}

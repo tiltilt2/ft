@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontteam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/ICON.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="head">
+        <div class="head-wrap">
+            <a href="#intro"><img src="img/logo.svg" alt="logo"></a>
+            <div class="head-info">
+                <ul class="menu montserrat">
+                    <a href="#aboutUs"><li>Наша команда</li></a>
+                    <a href="#reviews"><li>Отзывы</li></a>
+                    <a href="#course"><li>Курс</li></a>
+                </ul>
+               <button class="btn-head button" id="openModalBtn">Вход -></button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close ps2p">Х</span>
+                  <div class="modal-wrap">
+                    <div class="modal-info">
+                        <div class="modal-name-age">
+                            <input type="text" class="input" placeholder="Логин" required>
+                            <input type="password" class="input" placeholder="Пароль" required>
+                        </div>
+                        <img src="img/modal.svg" alt="Фото профиля" class="modal-img">
+                    </div>
+                    <button class="modal-btn button ps2p">Войти</button>
+                    <p class="modal-text montserrat">Продолжая, вы принимаете <a href="">Условия использования</a> и <a href="">Уведомление о конфиденциальности.</a></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="intro" class="main back">
+        <div class="main-wrap">
+            <div class="intro">
+                <img src="img/home/INTRO.svg" alt="Курс" class="intro-img">
+                <div class="intro-text">
+                    <h1 class="ps2p">Бесплатный курс</h1>
+                    <h2 class="ps2p">по HTML/CSS верстке</h2>
+                    <p class="montserrat">Наша команда Front Team разработала легкий и быстрый курс по верстке. С помощью него вы сможете легко начать свой путь в сфере программирования</p>
+                    <a href="block1.html" class="montserrat">Приступай к курсу прямо сейчас</a>
+                </div>
+                <!-- <div id=container>
+                    йоу 
+                    <div id=flip>
+                      <div><div>че</div></div>
+                      <div><div>смотри</div></div>
+                      <div><div>алиса</div></div>
+                    </div>
+                    могу
+                </div> -->
+            </div>
+            <div id="aboutUs"></div>
+            <div class="about-us">
+                <div class="about-us-text">
+                    <h1 class="ps2p">Наша команда</h1>
+                    <p class="montserrat">Наша компания находится в центральном здании <a href="https://www.citymoscow.ru">Moscow City</a>. Мы  в сфере программирования с 2007 года, и нам есть чему научить вас! </p>
+                    <p class="montserrat">Над этим курсом работали два лучших сотрудника из нашей команды, вы сможете обратиться за помощью напрямую к ним.</p>
+                    <div class="about-us-us">
+                        <a href="https://t.me/qumatori"><img src="img/tilt.svg" alt="Алиса"></a>
+                        <a href="https://t.me/mmmnnchkkaayyaaa"><img src="img/mina.svg" alt="Ясмина"></a>
+                    </div>
+                </div>
+                <img src="img/home/AboutUs.svg" alt="Moscow City" class="about-us-img">
+            </div>
+            <div id="reviews"></div>
+            <div class="reviews">
+                <img src="img/phone.svg" alt="IPhone" class="reviews-img">
+                <div class="reviews-text">
+                    <h1 class="ps2p">Отзывы о курсе</h1>
+                    <p class="montserrat">Мы запустили этот курс 23 октября и уже на следующий день на нашу почту поступило множество сообщений обратной связи. На данный момент мы собрали целых 2 миллиона отзывов.  Вы так же можете поделится своим мнением о нас.</p>
+                    <div class="reviews-input">
+                        <input type="email" class="input" placeholder="Оставить отзыв" required>
+                        <button class="popup-btn button ps2p">Отправить</button>
+                    </div>
+                </div>
+            </div>
+            <div id="course"></div>
+            <div class="course">
+                <h1 class="ps2p">Курс по HTML/CSS верстке</h1>
+                <p class="montserrat">Курс состоит из нескольких блоков, благодаря которым вы полностью обучитесь верстке</p>
+                <div class="blocks">
+                    <a href="block1.html">
+                        <div class="block1">
+                            <div class="ps2p">
+                                <h3>Блок 1</h3>
+                                <h4>Visual Studio</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>В какой программе нам придется работать в процессе курса? Как ее адаптировать под себя?</p> 
+                                <p>Фишки Visual Studio Code</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="block2">
+                        <div class="ps2p">
+                            <h3>Блок 2</h3>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="montserrat">
+                            <p>С чего начать? Что такое теги? Как создать основу  под верстку? Какие конструкции использовать?</p>
+                            <p>Теги HTML</p>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <div class="ps2p">
+                            <h3>Блок 3</h3>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="montserrat">
+                            <p>Как придать цвета и стиля к твоему сайту? Как глянуть его на телефоне или планшете?</p> 
+                            <p>Адаптив и стили CSS</p>
+                        </div>
+                    </div>
+                    <div class="block4">
+                        <div class="ps2p">
+                            <h3>Блок 4</h3>
+                            <h4>GitHub</h4>
+                        </div>
+                        <div class="montserrat">
+                            <p>Как показать сайт своим друзьям, семье или второй половинке? Как рассказать всем о своем опыте?</p> 
+                            <p>Публикуем на GitHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="contacts">
+                <a href="https://t.me/+P29fYBxYKaVhMjli" target="_blank"><img src="img/tg.svg" alt="tg"></a>
+                <a href=""><img src="img/vk.svg" alt="vk" target="_blank"></a>
+                <a href=""><img src="img/gh.svg" alt="GitHub" target="_blank"></a>
+            </div>
+            <div class="footer-logo">
+                <p class="montserrat">Наша команда любит вас!</p>
+                <a href="index.html"><img src="img/FT.svg" alt="FT"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("openModalBtn");
+        var span = document.getElementsByClassName("close")[0];
+        var mdlbtn = document.getElementsByClassName("modal-btn")[0];
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        mdlbtn.onclick = function() {
+        modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

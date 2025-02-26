@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
+.info-block-one {
+   .purple {
+      color: #9803FC;
+   }
+   .indent {
+      margin-left: 67px;
+   }
+   h2 {
+      font-size: 40px;
+      font-weight: normal;
+   }
+   .html-str {
+      background-color: #101010;
+      border-radius: 30px;
+      width: 1202px;
+      height: 364px;
+      padding: 15px 26px;
+   }
+   .html-str-text {
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      p {
+         margin: 0;
+      }
+   }
+   .copyButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      color: white;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      outline: none;
+      font-size: 20px;
+      font-family: "Press Start 2P", serif;
+   }
+   .html-str-info {
+      font-family: "JetBrains Mono", serif;
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 29px;
+      p {
+         margin-top: 15px;
+      }
+   }
+}
+
+.course {
+   .block2-2:hover {
+      background-color: #7b00ce;
+   }
+   .block2-2 {
+      background-color: #4C4C4C;
+   } 
+   .block3-3 {
+      background-color: #3A3A3A;
+   }
+   .block4-4 {
+      background-color: #272727;
+   }
+}

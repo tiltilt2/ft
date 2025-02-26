@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontteam - блок 1</title>
+    <link rel="stylesheet" href="css/block1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/ICON.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="head">
+        <div class="head-wrap">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <div class="head-info">
+                <ul class="menu montserrat">
+                    <a href=""><li>Обучение</li></a>
+                    <a href=""><li>Основа</li></a>
+                    <a href="#course"><li>Курс</li></a>
+                </ul>
+                <button class="btn-head button" id="openModalBtn">Вход -></button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close ps2p">Х</span>
+                  <div class="modal-wrap">
+                    <div class="modal-info">
+                        <div class="modal-name-age">
+                            <input type="text" class="input" placeholder="Логин" required>
+                            <input type="password" class="input" placeholder="Пароль" required>
+                        </div>
+                        <img src="img/modal.svg" alt="Фото профиля" class="modal-img">
+                    </div>
+                    <button class="modal-btn button ps2p">Войти</button>
+                    <p class="modal-text montserrat">Продолжая, вы принимаете <a href="">Условия использования</a> и <a href="">Уведомление о конфиденциальности.</a></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main back">
+        <div class="main-wrap">
+            <div class="block-one">
+                <div class="block-one-text">
+                    <h1 class="ps2p">Блок 1</h1>
+                    <h2 class="ps2p">Visual Studio Code</h2>
+                    <p class="montserrat">Чтобы начать работу, нам нужно будет установить VSC на свое устройство (Windows/MacOS). </p>
+                    <a href="https://code.visualstudio.com" class="montserrat" target="_blank">Ссылка на скачивание</a>
+                </div>
+                <img src="img/block1/Vector.svg" alt="Курс" class="block-one-img">
+            </div>
+            <div class="video-block-one">
+                <h2 class="ps2p">Обучающие видео про установку VSC</h2>
+                <!-- <video width="1252" controls poster="img/block1/prewier.svg">
+                    <source src="https://vk.com/video-229544734_456239017?list=ln-wYeUeNBayenm8xjVM2" >
+                </video> -->
+                <iframe src="https://vkvideo.ru/video_ext.php?oid=-229544734&id=456239017&hash=29322b8d06084657" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+            <div class="info-block-one">
+                <h2 class="ps2p">Базовая структура HTML</h2>
+                <div class="html-str">
+                    <div class="html-str-text ps2p">
+                        <p>html</p>
+                        <button id="copyButton" class="copyButton"><img src="img/block1/copy.svg" alt="" id="copy"><img src="img/block1/yescopy.svg" alt="" style="display: none;" id="copyMessage">Скопировать код</button>
+                    </div>
+                    <div class="html-str-info">
+                        <p id="codeContainer">
+                            &lt;!<span class="purple">DOCTYPE html</span>&gt;<br>
+                            &lt;<span class="purple">html</span> lang<span class="purple">="</span>en<span class="purple">"</span>&gt;<br>
+                            &lt;<span class="purple">head</span>&gt;<br>
+                                <span class="indent">&lt;<span class="purple">meta</span> charset<span class="purple">="</span>UTF-8<span class="purple">"</span>&gt;</span><br>
+                                <span class="indent">&lt;<span class="purple">meta</span> name<span class="purple">="</span>viewport<span class="purple">"</span> content<span class="purple">="</span>width=device-width, initial-scale=1.0<span class="purple">"</span>&gt;</span><br>
+                                <span class="indent">&lt;<span class="purple">title</span>&gt;-&lt;/<span class="purple">title</span>&gt;</span><br>
+                            &lt;<span class="purple">/head</span>&gt;<br>
+                            &lt;<span class="purple">body</span>&gt;<br>
+                                <i class="indent">&lt;! - - тело проекта - - &gt;</i><br>
+                            &lt;<span class="purple">/body</span>&gt;<br>
+                            &lt;<span class="purple">/html</span>&gt;
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tasks-block-one">
+
+            </div>
+            <div id="course"></div>
+            <div class="course">
+                <div class="blocks">
+                    <a href="block1.html">
+                        <div class="block1-1">
+                            <div class="ps2p">
+                                <h3>Блок 1</h3>
+                                <h4>Visual Studio</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>В какой программе нам придется работать в процессе курса? Как ее адаптировать под себя?</p> 
+                                <p>Фишки Visual Studio Code</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="block2.html">
+                        <div class="block2-2">
+                            <div class="ps2p">
+                                <h3>Блок 2</h3>
+                                <h4>HTML</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>С чего начать? Что такое теги? Как создать основу  под верстку? Какие конструкции использовать?</p>
+                                <p>Теги HTML</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="block3-3">
+                        <div class="ps2p">
+                            <h3>Блок 3</h3>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="montserrat">
+                            <p>Как придать цвета и стиля к твоему сайту? Как глянуть его на телефоне или планшете?</p> 
+                            <p>Адаптив и стили CSS</p>
+                        </div>
+                    </div>
+                    <div class="block4-4">
+                        <div class="ps2p">
+                            <h3>Блок 4</h3>
+                            <h4>GitHub</h4>
+                        </div>
+                        <div class="montserrat">
+                            <p>Как показать сайт своим друзьям, семье или второй половинке? Как рассказать всем о своем опыте?</p> 
+                            <p>Публикуем на GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <input type="button" class="random" value="Перейти" onclick='document.getElementById("stat").disabled = false;'>
+                <input disabled type="button" id="stat" class="random1" value="2 блок"> -->
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="contacts">
+                <a href="https://t.me/+P29fYBxYKaVhMjli" target="_blank"><img src="img/tg.svg" alt="tg"></a>
+                <a href=""><img src="img/vk.svg" alt="vk" target="_blank"></a>
+                <a href=""><img src="img/gh.svg" alt="GitHub" target="_blank"></a>
+            </div>
+            <div class="footer-logo">
+                <p class="montserrat">Наша команда любит вас!</p>
+                <a href="index.html"><img src="img/FT.svg" alt="FT"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("openModalBtn");
+        var span = document.getElementsByClassName("close")[0];
+        var mdlbtn = document.getElementsByClassName("modal-btn")[0];
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        mdlbtn.onclick = function() {
+        modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        const copyButton = document.getElementById("copyButton");
+        const codeContainer = document.getElementById("codeContainer");
+        const copyMessage = document.getElementById("copyMessage");
+        copyButton.addEventListener("click", () => {
+        const range = document.createRange();
+        range.selectNode(codeContainer);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+
+        try {
+            document.execCommand('copy');
+            copy.style.display = "none";
+            copyMessage.style.display = "inline";
+            setTimeout(() => {
+            copyMessage.style.display = "none";
+            copy.style.display = "inline";
+            }, 2000);
+        } catch (err) {
+            console.error('Ошибка при копировании: ', err);
+            alert('Не удалось скопировать код.  Пожалуйста, скопируйте вручную.');
+        }
+
+        window.getSelection().removeAllRanges();
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

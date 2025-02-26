@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontteam - блок 2</title>
+    <link rel="stylesheet" href="css/block2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/ICON.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="head">
+        <div class="head-wrap">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <div class="head-info">
+                <ul class="menu montserrat">
+                    <a href=""><li>Обучение</li></a>
+                    <a href=""><li>Основа</li></a>
+                    <a href="#course"><li>Курс</li></a>
+                </ul>
+                <button class="btn-head button" id="openModalBtn">Вход -></button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close ps2p">Х</span>
+                  <div class="modal-wrap">
+                    <div class="modal-info">
+                        <div class="modal-name-age">
+                            <input type="text" class="input" placeholder="Логин" required>
+                            <input type="password" class="input" placeholder="Пароль" required>
+                        </div>
+                        <img src="img/modal.svg" alt="Фото профиля" class="modal-img">
+                    </div>
+                    <button class="modal-btn button ps2p">Войти</button>
+                    <p class="modal-text montserrat">Продолжая, вы принимаете <a href="">Условия использования</a> и <a href="">Уведомление о конфиденциальности.</a></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main back">
+        <div class="main-wrap">
+            <div class="block-two">
+                <div class="block-two-text">
+                    <h1 class="ps2p">Блок 2</h1>
+                    <h2 class="ps2p">HTML (Markup Language)</h2>
+                    <p class="montserrat">Для основной конструкции нам понадобится язык разметки HTML 5. </p>
+                    <a href="https://developer.mozilla.org/ru/docs/Web/HTML" class="montserrat" target="_blank">Ссылка на подробную информацию</a>
+                </div>
+                <img src="img/block2/Vector.svg" alt="Курс" class="block-one-img">
+            </div>
+            <div class="video-block-two">
+                <h2 class="ps2p">Обучающие видео про основы HTML</h2>
+                <video width="1252" controls preload="auto" poster="img/block2/prewier.svg">
+                    <source src="video/block1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="info-block-two">
+                <div class="html-strs-mini">
+                    <div>
+                        <h2 class="ps2p">Вставка текста</h2>
+                        <div class="html-str-mini">
+                            <div class="html-str-info-mini">
+                                <p>
+                                    &lt;<span class="purple">h1</span>&gt;&lt;/<span class="purple">h1</span>&gt;...&lt;<span class="purple">h6</span>&gt;&lt;/<span class="purple">h6</span>&gt; — <i>заголовок</i><br>
+                                    &lt;<span class="purple">p</span>&gt;&lt;/<span class="purple">p</span>&gt; — <i>основной текст</i><br>
+                                    &lt;<span class="purple">a </span>href<span class="purple">=""</span>&gt;&lt;/<span class="purple">a</span>&gt; — <i>ссылка (путь)</i><br>
+                                    &lt;<span class="purple">ol</span>&gt;&lt;/<span class="purple">ol</span>&gt; — <i>нумерованный список</i><br>
+                                    &lt;<span class="purple">ul</span>&gt;&lt;/<span class="purple">ul</span>&gt; — <i>маркированный список</i><br>
+                                    &lt;<span class="purple">li</span>&gt;&lt;/<span class="purple">li</span>&gt; — <i>пункт списка</i><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <h2 class="ps2p">Форматирование текста</h2>
+                        <div class="html-str-mini">
+                            <div class="html-str-info-mini">
+                                <p>
+                                    &lt;<span class="purple">b</span>&gt;&lt;/<span class="purple">b</span>&gt; — <i>простой жирный текст</i><br>
+                                    &lt;<span class="purple">strong</span>&gt;&lt;/<span class="purple">strong</span>&gt; — <i>важный жирный текст</i><br>
+                                    &lt;<span class="purple">i</span>&gt;&lt;/<span class="purple">i</span>&gt; — <i>текст курсивом</i><br>
+                                    &lt;<span class="purple">s</span>&gt;&lt;/<span class="purple">s</span>&gt; — <i>перечеркнутый текст</i><br>
+                                    &lt;<span class="purple">br</span>&gt; — <i>перенос на строку</i><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="html-strs-mini">
+                    <div>
+                        <h2 class="ps2p">Элементы</h2>
+                        <div class="html-str-mini">
+                            <div class="html-str-info-mini">
+                                <p>
+                                    &lt;<span class="purple">div</span>&gt;&lt;/<span class="purple">div</span>&gt; — <i>контейнер</i><br>
+                                    &lt;<span class="purple">img </span>src<span class="purple">="" </span>alt<span class="purple">=""</span>&gt; — <i>картинка (alt - что будет вместо img, если она не прогрузится)</i><br>
+                                    &lt;<span class="purple">audio</span>&gt;&lt;/<span class="purple">audio</span>&gt; — <i>звук</i><br>
+                                    &lt;<span class="purple">video</span>&gt;&lt;/<span class="purple">video</span>&gt; — <i>видео</i><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <h2 class="ps2p">Форма</h2>
+                        <div class="html-str-mini">
+                            <div class="html-str-info-mini">
+                                <p>
+                                    &lt;<span class="purple">form</span>&gt;&lt;/<span class="purple">form</span>&gt; — <i>создание формы</i><br>
+                                    &lt;<span class="purple">button</span>&gt;&lt;/<span class="purple">button</span>&gt; — <i>кнопка</i><br>
+                                    &lt;<span class="purple">input</span>&gt; — <i>поле ввода</i><br>
+                                    &lt;<span class="purple">label</span>&gt; — <i>памятка для поля ввода</i><br>
+                                    &lt;<span class="purple">textarea</span>&gt;&lt;/<span class="purple">textarea</span>&gt; — <i>создаёт большие поля ввода</i><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div>
+                    <h2 class="ps2p">Таблицы</h2>
+                    <div class="html-str">
+                        <div class="html-str-info">
+                            <p>
+                                &lt;<span class="purple">table</span>&gt;&lt;/<span class="purple">table</span>&gt; — <i>размещение таблицы</i><br>
+                                &lt;<span class="purple">caption</span>&gt;&lt;/<span class="purple">caption</span>&gt; — <i>название таблицы</i><br>
+                                &lt;<span class="purple">thead</span>&gt;&lt;/<span class="purple">thead</span>&gt; — <i>шапка таблицы</i><br>
+                                &lt;<span class="purple">tbody</span>&gt;&lt;/<span class="purple">tbody</span>&gt; — <i>тело таблицы</i><br>
+                            </p>
+                            <p>
+                                &lt;<span class="purple">td</span>&gt;&lt;/<span class="purple">td</span>&gt; — <i>одна ячейка таблицы</i><br>
+                                &lt;<span class="purple">th</span>&gt;&lt;/<span class="purple">th</span>&gt; — <i>обозначение заголовка таблицы</i><br>
+                                &lt;<span class="purple">tr</span>&gt; — <i>новая строка</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks-block-two">
+
+            </div>
+            <div id="course"></div>
+            <div class="course">
+                <div class="blocks">
+                    <a href="block1.html">
+                        <div class="block1-1">
+                            <div class="ps2p">
+                                <h3>Блок 1</h3>
+                                <h4>Visual Studio</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>В какой программе нам придется работать в процессе курса? Как ее адаптировать под себя?</p> 
+                                <p>Фишки Visual Studio Code</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="block2.html">
+                        <div class="block2-2">
+                            <div class="ps2p">
+                                <h3>Блок 2</h3>
+                                <h4>HTML</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>С чего начать? Что такое теги? Как создать основу  под верстку? Какие конструкции использовать?</p>
+                                <p>Теги HTML</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="block3.html">
+                        <div class="block3-3">
+                            <div class="ps2p">
+                                <h3>Блок 3</h3>
+                                <h4>CSS</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>Как придать цвета и стиля к твоему сайту? Как глянуть его на телефоне или планшете?</p> 
+                                <p>Адаптив и стили CSS</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="block4-4">
+                        <div class="ps2p">
+                            <h3>Блок 4</h3>
+                            <h4>GitHub</h4>
+                        </div>
+                        <div class="montserrat">
+                            <p>Как показать сайт своим друзьям, семье или второй половинке? Как рассказать всем о своем опыте?</p> 
+                            <p>Публикуем на GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <input type="button" class="random" value="Перейти" onclick='document.getElementById("stat").disabled = false;'>
+                <input disabled type="button" id="stat" class="random1" value="2 блок"> -->
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="contacts">
+                <a href="https://t.me/+P29fYBxYKaVhMjli" target="_blank"><img src="img/tg.svg" alt="tg"></a>
+                <a href=""><img src="img/vk.svg" alt="vk" target="_blank"></a>
+                <a href=""><img src="img/gh.svg" alt="GitHub" target="_blank"></a>
+            </div>
+            <div class="footer-logo">
+                <p class="montserrat">Наша команда любит вас!</p>
+                <a href="index.html"><img src="img/FT.svg" alt="FT"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("openModalBtn");
+        var span = document.getElementsByClassName("close")[0];
+        var mdlbtn = document.getElementsByClassName("modal-btn")[0];
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        mdlbtn.onclick = function() {
+        modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

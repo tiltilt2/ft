@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontteam - блок 3</title>
+    <link rel="stylesheet" href="css/block3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/ICON.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="head">
+        <div class="head-wrap">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <div class="head-info">
+                <ul class="menu montserrat">
+                    <a href=""><li>Обучение</li></a>
+                    <a href=""><li>Основа</li></a>
+                    <a href="#course"><li>Курс</li></a>
+                </ul>
+                <button class="btn-head button" id="openModalBtn">Вход -></button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close ps2p">Х</span>
+                  <div class="modal-wrap">
+                    <div class="modal-info">
+                        <div class="modal-name-age">
+                            <input type="text" class="input" placeholder="Логин" required>
+                            <input type="password" class="input" placeholder="Пароль" required>
+                        </div>
+                        <img src="img/modal.svg" alt="Фото профиля" class="modal-img">
+                    </div>
+                    <button class="modal-btn button ps2p">Войти</button>
+                    <p class="modal-text montserrat">Продолжая, вы принимаете <a href="">Условия использования</a> и <a href="">Уведомление о конфиденциальности.</a></p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main back">
+        <div class="main-wrap">
+            <div class="block-three">
+                <div class="block-three-text">
+                    <h1 class="ps2p">Блок 3</h1>
+                    <h2 class="ps2p">CSS (Style Sheets)</h2>
+                    <p class="montserrat">Для стилей и дизайна нам понадобится CSS 3. </p>
+                    <a href="https://developer.mozilla.org/ru/docs/Web/CSS" class="montserrat" target="_blank">Ссылка на подробную информацию</a>
+                </div>
+                <img src="img/block3/Vector.svg" alt="Курс" class="block-one-img">
+            </div>
+            <div class="video-block-three">
+                <h2 class="ps2p">Обучающие видео про основы CSS</h2>
+                <video width="1252" controls preload="auto" poster="img/block3/prewier.svg">
+                    <source src="video/block1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="info-block-three">
+                <div class="html-strs-mini">
+                    <div>
+                        <h2 class="ps2p">Вставка текста</h2>
+                        <div class="html-str-mini">
+                            <div class="html-str-info-mini">
+                                <p>
+                                    <span class="purple">color</span> — <i>цвет текста</i><br>
+                                    <span class="purple">font-size</span> — <i>размер шрифта</i><br>
+                                    <span class="purple">font-family</span> — <i>шрифт</i><br>
+                                    <span class="purple">font-weight</span> — <i>толщина</i><br>
+                                    <span class="purple">text-align</span> — <i>выравнивание текста</i><br>
+                                    <span class="purple">line-height</span> — <i>интервал текста</i><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <h2 class="ps2p">Фон</h2>
+                        <div class="html-str-mini">
+                            <div class="html-str-info-mini">
+                                <p>
+                                    <span class="purple">background-color</span> — <i>цвет фона</i><br>
+                                    <span class="purple">background-image</span> — <i>фоновая картинка</i><br>
+                                    <span class="purple">background-repeat</span> — <i>повторение картинки фона</i><br>
+                                    <span class="purple">background-position</span> — <i>позиция фона</i><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="html-strs-mini">
+                    <div>
+                        <h2 class="ps2p">Форматирование</h2>
+                        <div class="html-str-mini">
+                            <div class="html-str-info-mini">
+                                <p>
+                                    <span class="purple">width</span> — <i>ширина (min/max)</i><br>
+                                    <span class="purple">height</span> — <i>высота (min/max)</i><br>
+                                    <span class="purple">margin</span> — <i>внешние отступы</i><br>
+                                    <span class="purple">padding</span> — <i>внутренние отступы</i><br>
+                                    <span class="purple">border</span> — <i>вид границы элемента</i><br>
+                                    <span class="purple">border-radius</span> — <i>скругление углов</i><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <h2 class="ps2p">Отображение</h2>
+                        <div class="html-str-mini">
+                            <div class="html-str-info-mini">
+                                <p>
+                                    <span class="purple">display</span> — <i>положение элементов</i><br>
+                                    <span class="purple">flex-direction</span> — <i>колонна/ряд</i><br>
+                                    <span class="purple">align-items</span> — <i>выравнивание по вертикали</i><br>
+                                    <span class="purple">justify-content</span> — <i>выравнивание по горизонтали</i><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="tasks-block-three">
+
+            </div>
+            <div id="course"></div>
+            <div class="course">
+                <div class="blocks">
+                    <a href="block1.html">
+                        <div class="block1-1">
+                            <div class="ps2p">
+                                <h3>Блок 1</h3>
+                                <h4>Visual Studio</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>В какой программе нам придется работать в процессе курса? Как ее адаптировать под себя?</p> 
+                                <p>Фишки Visual Studio Code</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="block2.html">
+                        <div class="block2-2">
+                            <div class="ps2p">
+                                <h3>Блок 2</h3>
+                                <h4>HTML</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>С чего начать? Что такое теги? Как создать основу  под верстку? Какие конструкции использовать?</p>
+                                <p>Теги HTML</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="block3.html">
+                        <div class="block3-3">
+                            <div class="ps2p">
+                                <h3>Блок 3</h3>
+                                <h4>CSS</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>Как придать цвета и стиля к твоему сайту? Как глянуть его на телефоне или планшете?</p> 
+                                <p>Адаптив и стили CSS</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="block4.html">
+                        <div class="block4-4">
+                            <div class="ps2p">
+                                <h3>Блок 4</h3>
+                                <h4>GitHub</h4>
+                            </div>
+                            <div class="montserrat">
+                                <p>Как показать сайт своим друзьям, семье или второй половинке? Как рассказать всем о своем опыте?</p> 
+                                <p>Публикуем на GitHub</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- <input type="button" class="random" value="Перейти" onclick='document.getElementById("stat").disabled = false;'>
+                <input disabled type="button" id="stat" class="random1" value="2 блок"> -->
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="contacts">
+                <a href="https://t.me/+P29fYBxYKaVhMjli" target="_blank"><img src="img/tg.svg" alt="tg"></a>
+                <a href=""><img src="img/vk.svg" alt="vk" target="_blank"></a>
+                <a href=""><img src="img/gh.svg" alt="GitHub" target="_blank"></a>
+            </div>
+            <div class="footer-logo">
+                <p class="montserrat">Наша команда любит вас!</p>
+                <a href="index.html"><img src="img/FT.svg" alt="FT"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
